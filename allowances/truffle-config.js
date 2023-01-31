@@ -1,95 +1,138 @@
-const HDWalletProvider = require('@truffle/hdwallet-provider')
-require('dotenv').config()
-const package = require('./package')
-const mnemonic = process.env.MNEMONIC
-const token = process.env.INFURA_TOKEN
+const HDWalletProvider = require("@truffle/hdwallet-provider");
+require("dotenv").config();
+const package = require("./package");
+const mnemonic = process.env.MNEMONIC;
+const pk = process.env.PRIVATE_KEYS;
+const token = process.env.INFURA_TOKEN;
 
 module.exports = {
   networks: {
     development: {
       host: "localhost",
       port: 8545,
-      network_id: "*" // Match any network id
+      network_id: "*", // Match any network id
     },
     rinkeby: {
       provider: () => {
-        return new HDWalletProvider(mnemonic, 'https://rinkeby.infura.io/v3/' + token)
+        return new HDWalletProvider(
+          mnemonic,
+          "https://rinkeby.infura.io/v3/" + token
+        );
       },
-      network_id: '4',
+      network_id: "4",
       gasPrice: 25000000000, // 25 Gwei
     },
     goerli: {
       provider: () => {
-        return new HDWalletProvider(mnemonic, 'https://goerli.infura.io/v3/' + token)
+        return new HDWalletProvider(
+          mnemonic,
+          "https://goerli.infura.io/v3/" + token
+        );
       },
-      network_id: '5',
+      network_id: "5",
       gasPrice: 25000000000, // 25 Gwei
     },
     kovan: {
       provider: () => {
-        return new HDWalletProvider(mnemonic, 'https://kovan.infura.io/v3/' + token)
+        return new HDWalletProvider(
+          mnemonic,
+          "https://kovan.infura.io/v3/" + token
+        );
       },
-      network_id: '42',
+      network_id: "42",
       gasPrice: 25000000000, // 25 Gwei
     },
     mainnet: {
       provider: () => {
-        return new HDWalletProvider(mnemonic, 'https://mainnet.infura.io/v3/' + token)
+        return new HDWalletProvider(
+          mnemonic,
+          "https://mainnet.infura.io/v3/" + token
+        );
       },
-      network_id: '1',
+      network_id: "1",
       gasPrice: 41000000000, // 41 Gwei
     },
     xdai: {
       provider: () => {
-        return new HDWalletProvider(mnemonic, 'https://dai.poa.network')
+        return new HDWalletProvider(mnemonic, "https://dai.poa.network");
       },
-      network_id: '100',
+      network_id: "100",
       gasPrice: 1000000000, // 1 Gwei
     },
     volta: {
       provider: () => {
-        return new HDWalletProvider(mnemonic, 'https://volta-rpc.energyweb.org')
+        return new HDWalletProvider(
+          mnemonic,
+          "https://volta-rpc.energyweb.org"
+        );
       },
-      network_id: '73799',
-      gasPrice: 1
+      network_id: "73799",
+      gasPrice: 1,
     },
     ewc: {
       provider: () => {
-        return new HDWalletProvider(mnemonic, 'https://rpc.energyweb.org')
+        return new HDWalletProvider(mnemonic, "https://rpc.energyweb.org");
       },
-      network_id: '246',
-      gasPrice: 1
+      network_id: "246",
+      gasPrice: 1,
     },
     bsc: {
       provider: () => {
-        return new HDWalletProvider(mnemonic, 'https://bsc-dataseed.binance.org')
+        return new HDWalletProvider(
+          mnemonic,
+          "https://bsc-dataseed.binance.org"
+        );
       },
-      network_id: '56',
-      gasPrice: 5000000000 // 5 Gwei
+      network_id: "56",
+      gasPrice: 5000000000, // 5 Gwei
     },
-    avalanche: { 
+    avalanche: {
       provider: () => {
-        return new HDWalletProvider(mnemonic, 'https://api.avax.network/ext/bc/C/rpc')
+        return new HDWalletProvider(
+          mnemonic,
+          "https://api.avax.network/ext/bc/C/rpc"
+        );
       },
-      network_id: '43114',
+      network_id: "43114",
       gasPrice: 47000000000, // 47 Gwei
     },
     polygon: {
       provider: () => {
-        return new HDWalletProvider(mnemonic, 'https://polygon-rpc.com/')
+        return new HDWalletProvider(mnemonic, "https://polygon-rpc.com/");
       },
-      network_id: '137',
+      network_id: "137",
       gasPrice: 35000000000, // 35 Gwei
-    }
+    },
+    astar: {
+      provider: () => {
+        return new HDWalletProvider(pk, "https://evm.astar.network");
+      },
+      network_id: "592",
+      gasPrice: 1000000000, // 1 Gwei
+    },
+    shiden: {
+      provider: () => {
+        return new HDWalletProvider(pk, "https://evm.shiden.astar.network");
+      },
+      network_id: "336",
+      gasPrice: 1000000000, // 1 Gwei
+    },
+    shibuya: {
+      provider: () => {
+        return new HDWalletProvider(pk, "https://evm.shibuya.astar.network");
+      },
+      network_id: "81",
+      gasPrice: 1000000000, // 1 Gwei
+    },
   },
   compilers: {
     solc: {
       version: package.dependencies.solc,
       settings: {
         optimizer: {
-          enabled: false
-        }
-      }
-    }
-  }
+          enabled: false,
+        },
+      },
+    },
+  },
 };
