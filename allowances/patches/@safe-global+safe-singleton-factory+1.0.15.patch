@@ -1,0 +1,156 @@
+diff --git a/node_modules/@safe-global/safe-singleton-factory/artifacts/1261120/deployment.json b/node_modules/@safe-global/safe-singleton-factory/artifacts/1261120/deployment.json
+new file mode 100644
+index 0000000..1ae52ae
+--- /dev/null
++++ b/node_modules/@safe-global/safe-singleton-factory/artifacts/1261120/deployment.json
+@@ -0,0 +1,7 @@
++{
++  "gasPrice": 16200000,
++  "gasLimit": 100498,
++  "signerAddress": "0xE1CB04A0fA36DdD16a06ea828007E35e1a3cBC37",
++  "transaction": "0xf8a68083f73140830188928080b853604580600e600039806000f350fe7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe03601600081602082378035828234f58015156039578182fd5b8082525050506014600cf383267ca4a090f571e53253247003f7d667fcef9fd0ec4610250a04b84af239b54e8aae42f0a0728bb74b7dffc38cf6a9ca0436021f0ceb27e236862a5013f03961d6b868e409",
++  "address": "0x914d7Fec6aaC8cd542e72Bca78B30650d45643d7"
++}
+diff --git a/node_modules/@safe-global/safe-singleton-factory/artifacts/17000/deployment.json b/node_modules/@safe-global/safe-singleton-factory/artifacts/17000/deployment.json
+new file mode 100644
+index 0000000..fba96ae
+--- /dev/null
++++ b/node_modules/@safe-global/safe-singleton-factory/artifacts/17000/deployment.json
+@@ -0,0 +1,7 @@
++{
++  "gasPrice": 1000000000,
++  "gasLimit": 95392,
++  "signerAddress": "0xE1CB04A0fA36DdD16a06ea828007E35e1a3cBC37",
++  "transaction": "0xf8a680843b9aca00830174a08080b853604580600e600039806000f350fe7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe03601600081602082378035828234f58015156039578182fd5b8082525050506014600cf38284f4a01a976170bc3ff3c5ef1290e7888cf8623afb020f9fc7a56a76f329fec786f706a0372c672cb414fdee81b0b08e130627f134f92600f6e9b9eb5bb6774f20d49745",
++  "address": "0x914d7Fec6aaC8cd542e72Bca78B30650d45643d7"
++}
+diff --git a/node_modules/@safe-global/safe-singleton-factory/artifacts/30/deployment.json b/node_modules/@safe-global/safe-singleton-factory/artifacts/30/deployment.json
+new file mode 100644
+index 0000000..cc9db3b
+--- /dev/null
++++ b/node_modules/@safe-global/safe-singleton-factory/artifacts/30/deployment.json
+@@ -0,0 +1,7 @@
++{
++  "gasPrice": 65800000,
++  "gasLimit": 101207,
++  "signerAddress": "0xE1CB04A0fA36DdD16a06ea828007E35e1a3cBC37",
++  "transaction": "0xf8a4808403ec074083018b578080b853604580600e600039806000f350fe7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe03601600081602082378035828234f58015156039578182fd5b8082525050506014600cf35fa02b1659a525a1a94b34165aa4b1b38ebd6b177a8bb66a4be9086c9be96fb68abea06d5a5afe2f0d7f845bf765963aa2ef597abbf8867cbe3e4819920b4a6ca8b5c4",
++  "address": "0x914d7Fec6aaC8cd542e72Bca78B30650d45643d7"
++}
+diff --git a/node_modules/@safe-global/safe-singleton-factory/artifacts/31/deployment.json b/node_modules/@safe-global/safe-singleton-factory/artifacts/31/deployment.json
+new file mode 100644
+index 0000000..eb56de0
+--- /dev/null
++++ b/node_modules/@safe-global/safe-singleton-factory/artifacts/31/deployment.json
+@@ -0,0 +1,7 @@
++{
++  "gasPrice": 65826581,
++  "gasLimit": 101207,
++  "signerAddress": "0xE1CB04A0fA36DdD16a06ea828007E35e1a3cBC37",
++  "transaction": "0xf8a4808403ec6f1583018b578080b853604580600e600039806000f350fe7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe03601600081602082378035828234f58015156039578182fd5b8082525050506014600cf361a0f2a061af355a5bb0bd262f0dfc90e1a6801fbbd087dcae238d3b8b58a9b7eddca012c674387470822c2ce7b3f82de8dc18aaf39e6f873c5a3373e21a0d9d2a4a82",
++  "address": "0x914d7Fec6aaC8cd542e72Bca78B30650d45643d7"
++}
+diff --git a/node_modules/@safe-global/safe-singleton-factory/artifacts/336/deployment.json b/node_modules/@safe-global/safe-singleton-factory/artifacts/336/deployment.json
+new file mode 100644
+index 0000000..4d16059
+--- /dev/null
++++ b/node_modules/@safe-global/safe-singleton-factory/artifacts/336/deployment.json
+@@ -0,0 +1,7 @@
++{
++  "gasPrice": 7793713500,
++  "gasLimit": 101616,
++  "signerAddress": "0xE1CB04A0fA36DdD16a06ea828007E35e1a3cBC37",
++  "transaction": "0xf8a7808501d08aa15c83018cf08080b853604580600e600039806000f350fe7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe03601600081602082378035828234f58015156039578182fd5b8082525050506014600cf38202c3a0c895c52e3ef6fa80ed3e477ec7bbd734fb86ddc38bfb6127c03fe8f00fac3015a04dd1ced9ab9491d43089acd98e617527b10887b2560ce6629b30d81b37d69fa6",
++  "address": "0x914d7Fec6aaC8cd542e72Bca78B30650d45643d7"
++}
+diff --git a/node_modules/@safe-global/safe-singleton-factory/artifacts/534351/deployment.json b/node_modules/@safe-global/safe-singleton-factory/artifacts/534351/deployment.json
+new file mode 100644
+index 0000000..163b6ca
+--- /dev/null
++++ b/node_modules/@safe-global/safe-singleton-factory/artifacts/534351/deployment.json
+@@ -0,0 +1,7 @@
++{
++  "gasPrice": 231000000,
++  "gasLimit": 95392,
++  "signerAddress": "0xE1CB04A0fA36DdD16a06ea828007E35e1a3cBC37",
++  "transaction": "0xf8a780840dc4c7c0830174a08080b853604580600e600039806000f350fe7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe03601600081602082378035828234f58015156039578182fd5b8082525050506014600cf383104ec1a0780d3ac8f952950b55c066b53d38a650c3196f383947b26c41142f38f9f3fdfda0711697af3351ba018ad5db1ae1e0b6364c11272e9ce0285f3724d8a74134733f",
++  "address": "0x914d7Fec6aaC8cd542e72Bca78B30650d45643d7"
++}
+diff --git a/node_modules/@safe-global/safe-singleton-factory/artifacts/534352/deployment.json b/node_modules/@safe-global/safe-singleton-factory/artifacts/534352/deployment.json
+new file mode 100644
+index 0000000..a92377c
+--- /dev/null
++++ b/node_modules/@safe-global/safe-singleton-factory/artifacts/534352/deployment.json
+@@ -0,0 +1,7 @@
++{
++  "gasPrice": 500000000,
++  "gasLimit": 95392,
++  "signerAddress": "0xE1CB04A0fA36DdD16a06ea828007E35e1a3cBC37",
++  "transaction": "0xf8a780841dcd6500830174a08080b853604580600e600039806000f350fe7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe03601600081602082378035828234f58015156039578182fd5b8082525050506014600cf383104ec3a0ab0bd3dc16b59762c44f4449164bf4288c3e147f227b6315c3859d417d877abba079a761fa8d83a76abe8863fc24b4e14c1c99d98ae5485b98e6a430cc522cb897",
++  "address": "0x914d7Fec6aaC8cd542e72Bca78B30650d45643d7"
++}
+diff --git a/node_modules/@safe-global/safe-singleton-factory/artifacts/59144/deployment.json b/node_modules/@safe-global/safe-singleton-factory/artifacts/59144/deployment.json
+new file mode 100644
+index 0000000..146501e
+--- /dev/null
++++ b/node_modules/@safe-global/safe-singleton-factory/artifacts/59144/deployment.json
+@@ -0,0 +1,7 @@
++{
++  "gasPrice": 2109737543,
++  "gasLimit": 95383,
++  "signerAddress": "0xE1CB04A0fA36DdD16a06ea828007E35e1a3cBC37",
++  "transaction": "0xf8a780847dc00a47830174978080b853604580600e600039806000f350fe7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe03601600081602082378035828234f58015156039578182fd5b8082525050506014600cf38301ce34a0644acada1fe5dee2d6f39297beb5c1aeb1594d32d6c3bf0e4676fa78c57ad1aaa005e2fb3aee3d7d67611203ef7fbb52697f048516bfdb2efcadff48edefb99581",
++  "address": "0x914d7Fec6aaC8cd542e72Bca78B30650d45643d7"
++}
+diff --git a/node_modules/@safe-global/safe-singleton-factory/artifacts/592/deployment.json b/node_modules/@safe-global/safe-singleton-factory/artifacts/592/deployment.json
+new file mode 100644
+index 0000000..3d6ebb5
+--- /dev/null
++++ b/node_modules/@safe-global/safe-singleton-factory/artifacts/592/deployment.json
+@@ -0,0 +1,7 @@
++{
++  "gasPrice": 31816883742,
++  "gasLimit": 101616,
++  "signerAddress": "0xE1CB04A0fA36DdD16a06ea828007E35e1a3cBC37",
++  "transaction": "0xf8a7808507686f1e1e83018cf08080b853604580600e600039806000f350fe7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe03601600081602082378035828234f58015156039578182fd5b8082525050506014600cf38204c3a0710ba2c34ba5673a9156b4b8505f252060655973108bea82255ab0843961f031a00f233e98475d064b5cb765cf66c655095ff6a03e87571e4e34b46ccb2cb5ffc9",
++  "address": "0x914d7Fec6aaC8cd542e72Bca78B30650d45643d7"
++}
+diff --git a/node_modules/@safe-global/safe-singleton-factory/artifacts/81/deployment.json b/node_modules/@safe-global/safe-singleton-factory/artifacts/81/deployment.json
+new file mode 100644
+index 0000000..dfd827c
+--- /dev/null
++++ b/node_modules/@safe-global/safe-singleton-factory/artifacts/81/deployment.json
+@@ -0,0 +1,7 @@
++{
++  "gasPrice": 100000000000,
++  "gasLimit": 95383,
++  "signerAddress": "0xE1CB04A0fA36DdD16a06ea828007E35e1a3cBC37",
++  "transaction": "0xf8a68085174876e800830174978080b853604580600e600039806000f350fe7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe03601600081602082378035828234f58015156039578182fd5b8082525050506014600cf381c5a0406f62d4e92a80e47f7b33fce624aa20b01ae33b1f55656b7345562ed567c077a0496789872b5ee825ad9762e172cbf4e1921f534a17c8d48f2a27f982a4eb92b1",
++  "address": "0x914d7Fec6aaC8cd542e72Bca78B30650d45643d7"
++}
+diff --git a/node_modules/@safe-global/safe-singleton-factory/artifacts/9000/deployment.json b/node_modules/@safe-global/safe-singleton-factory/artifacts/9000/deployment.json
+new file mode 100644
+index 0000000..71034da
+--- /dev/null
++++ b/node_modules/@safe-global/safe-singleton-factory/artifacts/9000/deployment.json
+@@ -0,0 +1,7 @@
++{
++	"gasPrice": 200000000,
++	"gasLimit": 100000,
++	"signerAddress": "0xE1CB04A0fA36DdD16a06ea828007E35e1a3cBC37",
++	"transaction": "0x",
++	"address": "0x914d7Fec6aaC8cd542e72Bca78B30650d45643d7"
++}
+diff --git a/node_modules/@safe-global/safe-singleton-factory/artifacts/9001/deployment.json b/node_modules/@safe-global/safe-singleton-factory/artifacts/9001/deployment.json
+new file mode 100644
+index 0000000..71034da
+--- /dev/null
++++ b/node_modules/@safe-global/safe-singleton-factory/artifacts/9001/deployment.json
+@@ -0,0 +1,7 @@
++{
++	"gasPrice": 200000000,
++	"gasLimit": 100000,
++	"signerAddress": "0xE1CB04A0fA36DdD16a06ea828007E35e1a3cBC37",
++	"transaction": "0x",
++	"address": "0x914d7Fec6aaC8cd542e72Bca78B30650d45643d7"
++}
