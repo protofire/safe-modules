@@ -8,17 +8,23 @@ import dotenv from 'dotenv'
 import { HardhatUserConfig, HttpNetworkUserConfig } from 'hardhat/types'
 import { DeterministicDeploymentInfo } from 'hardhat-deploy/dist/types'
 import { getSingletonFactoryInfo } from '@safe-global/safe-singleton-factory'
+import yargs from "yargs"
+
+const argv = yargs
+  .option('network', { type: 'string' })
+  .help(false)
+  .version(false).argv
 
 dotenv.config()
 
-const { INFURA_KEY, MNEMONIC, ETHERSCAN_API_KEY } = process.env
+const { INFURA_KEY, MNEMONIC, ETHERSCAN_API_KEY, NODE_URL, PK } = process.env
+
+const DEFAULT_MNEMONIC = 'candy maple cake sugar pudding cream honey rich smooth crumble sweet treat'
 
 const sharedNetworkConfig: HttpNetworkUserConfig = {
-  accounts: {
-    mnemonic:
-      MNEMONIC ||
-      'candy maple cake sugar pudding cream honey rich smooth crumble sweet treat',
-  },
+  accounts: PK
+    ? [PK]
+    : { mnemonic: MNEMONIC || DEFAULT_MNEMONIC },
 }
 
 const config: HardhatUserConfig = {
@@ -96,6 +102,14 @@ const config: HardhatUserConfig = {
       ...sharedNetworkConfig,
       url: `https://api.avax.network/ext/bc/C/rpc`,
     },
+
+    // attach custom network configuration if any is available
+    ...(!!NODE_URL && argv && 'network' in argv && !!(argv.network) ? {
+      [`${(argv).network}`]: {
+        ...sharedNetworkConfig,
+        url: NODE_URL,
+      },
+    } : {}),
   },
   deterministicDeployment,
   namedAccounts: {
