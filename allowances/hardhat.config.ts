@@ -102,6 +102,14 @@ const config: HardhatUserConfig = {
       ...sharedNetworkConfig,
       url: `https://api.avax.network/ext/bc/C/rpc`,
     },
+    taiko: {
+      url: 'https://rpc.hekla.taiko.xyz',
+      accounts: [process.env.PK ?? '0x0'],
+    },
+    taikoMinnetL2: {
+      url: 'https://rpc.mainnet.taiko.xyz',
+      accounts: [process.env.PK ?? '0x0'],
+    },
 
     // attach custom network configuration if any is available
     ...(!!NODE_URL && argv && 'network' in argv && !!(argv.network) ? {
