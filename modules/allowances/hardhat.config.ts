@@ -4,7 +4,7 @@ import './tasks/deploy_verify'
 import dotenv from 'dotenv'
 import { HardhatUserConfig, HttpNetworkUserConfig } from 'hardhat/types'
 import { DeterministicDeploymentInfo } from 'hardhat-deploy/dist/types'
-import { getSingletonFactoryInfo } from '@safe-global/safe-singleton-factory'
+import { getSingletonFactoryInfo } from '@safe-fndn/safe-singleton-factory'
 
 dotenv.config()
 
