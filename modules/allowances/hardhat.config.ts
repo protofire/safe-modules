@@ -8,14 +8,14 @@ import { getSingletonFactoryInfo } from '@safe-global/safe-singleton-factory'
 
 dotenv.config()
 
-const { INFURA_KEY, MNEMONIC, ETHERSCAN_API_KEY } = process.env
+const { INFURA_KEY, MNEMONIC, ETHERSCAN_API_KEY, PK } = process.env
+
+const DEFAULT_MNEMONIC = 'candy maple cake sugar pudding cream honey rich smooth crumble sweet treat'
 
 const sharedNetworkConfig: HttpNetworkUserConfig = {
-  accounts: {
-    mnemonic:
-      MNEMONIC ||
-      'candy maple cake sugar pudding cream honey rich smooth crumble sweet treat',
-  },
+  accounts: PK
+    ? [PK]
+    : { mnemonic: MNEMONIC || DEFAULT_MNEMONIC },
 }
 
 const config: HardhatUserConfig = {
