@@ -4,8 +4,10 @@ packages:
   - modules/*
 
 onlyBuiltDependencies:
+  - '@safe-fndn/safe-singleton-factory'
   - '@swc/core'
   - bufferutil
+  - candide-contracts
   - es5-ext
   - esbuild
   - keccak
