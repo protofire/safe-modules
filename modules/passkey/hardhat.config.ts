@@ -33,18 +33,6 @@ const customNetwork = CUSTOM_NODE_URL
     }
   : {}
 
-const compilerSettings = {
-  version: '0.8.26',
-  settings: {
-    optimizer: {
-      enabled: true,
-      runs: 10_000_000,
-    },
-    viaIR: true,
-    evmVersion: 'paris',
-  },
-}
-
 const deterministicDeployment = (network: string): DeterministicDeploymentInfo => {
   const info = getSingletonFactoryInfo(parseInt(network))
   if (!info) {
@@ -89,18 +77,14 @@ const config: HardhatUserConfig = {
   },
   deterministicDeployment,
   solidity: {
-    compilers: [compilerSettings],
-    overrides: {
-      // FCL library does not optimize well via IR. In order to take advantage of the IR optimizer
-      // in the rest of the project without causing significant regressions to the FCL verifier, we
-      // add a compiler setting override for that specific contract.
-      'contracts/verifiers/FCLP256Verifier.sol': {
-        ...compilerSettings,
-        settings: {
-          ...compilerSettings.settings,
-          viaIR: false,
-        },
+    version: '0.8.26',
+    settings: {
+      optimizer: {
+        enabled: true,
+        runs: 10_000_000,
       },
+      viaIR: true,
+      evmVersion: 'paris',
     },
   },
   namedAccounts: {

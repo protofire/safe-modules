@@ -1,5 +1,13 @@
 # Changelog
 
+# Current Version
+
+## Changes
+
+### General
+
+- Remove the `FCLP256Verifier` contract and all related code, as it has some known bugs (nothing security critical ATM).
+
 # Version 0.2.1
 
 ## Compiler settings

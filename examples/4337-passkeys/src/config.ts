@@ -1,6 +1,6 @@
 import { getMultiSendDeployment, getProxyFactoryDeployment, getSafeL2SingletonDeployment } from '@safe-global/safe-deployments'
 import {
-  getFCLP256VerifierDeployment,
+  getDaimoP256VerifierDeployment,
   getSafe4337ModuleDeployment,
   getSafeModuleSetupDeployment,
 } from '@safe-global/safe-modules-deployments'
@@ -35,7 +35,7 @@ const SAFE_4337_MODULE_ADDRESS = getDeploymentAddress(getSafe4337ModuleDeploymen
 
 const SAFE_MODULE_SETUP_ADDRESS = getDeploymentAddress(getSafeModuleSetupDeployment)
 
-const P256_VERIFIER_ADDRESS = getDeploymentAddress(getFCLP256VerifierDeployment)
+const P256_VERIFIER_ADDRESS = getDeploymentAddress(getDaimoP256VerifierDeployment)
 
 const SAFE_PROXY_FACTORY_ADDRESS = getDeploymentAddress(getProxyFactoryDeployment)
 
