@@ -1,0 +1,26 @@
+diff --git a/artifacts/5888/deployment.json b/artifacts/5888/deployment.json
+new file mode 100644
+index 0000000000000000000000000000000000000000..ab0f6161ae041b3a981a5fad194dbb108b1af1b1
+--- /dev/null
++++ b/artifacts/5888/deployment.json
+@@ -0,0 +1,7 @@
++{
++	"gasPrice": 11250000000,
++	"gasLimit": 95392,
++	"signerAddress": "0xE1CB04A0fA36DdD16a06ea828007E35e1a3cBC37",
++	"transaction": "0xf8a78085029e8d6080830174a08080b853604580600e600039806000f350fe7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe03601600081602082378035828234f58015156039578182fd5b8082525050506014600cf3822e23a033af079dbc531040ecda184531077bec49cd4c09c8ae2a5aef779948c7cb4ef0a05035039eb7fcbe026afe6d34714f2d7b4e4089011abe4b5421a99a31c4280eb1",
++	"address": "0x914d7Fec6aaC8cd542e72Bca78B30650d45643d7"
++}
+diff --git a/artifacts/870/deployment.json b/artifacts/870/deployment.json
+new file mode 100644
+index 0000000000000000000000000000000000000000..0ea8fd126793be295cfbb5afab36470a5c0d5f50
+--- /dev/null
++++ b/artifacts/870/deployment.json
+@@ -0,0 +1,7 @@
++{
++	"gasPrice": 1552348679,
++	"gasLimit": 101616,
++	"signerAddress": "0xE1CB04A0fA36DdD16a06ea828007E35e1a3cBC37",
++	"transaction": "0xf8a680845c86f60783018cf08080b853604580600e600039806000f350fe7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe03601600081602082378035828234f58015156039578182fd5b8082525050506014600cf38206f0a068696a23497bb029f44510aa6f15418d68c88af5c78d29ef7e85fb35c851ebfaa03c0216ea5812218c0feb490bfcde2e568c0c3fd7b308e71a72a2dce3baa92c49",
++	"address": "0x914d7Fec6aaC8cd542e72Bca78B30650d45643d7"
++}
