@@ -13,7 +13,7 @@
     "build": "hardhat compile",
     "test": "hardhat test",
     "coverage": "hardhat coverage",
-    "deploy": "hardhat deploy-verify --network",
+    "deploy": "hardhat deploy-verify",
     "prepare": "pnpm run clean && npm run build",
     "lint": "pnpm run lint:sol && npm run lint:ts",
     "lint:sol": "solhint 'contracts/**/*.sol'",

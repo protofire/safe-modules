@@ -34,7 +34,7 @@
     "pnpm": "^9"
   },
   "devDependencies": {
-    "@safe-global/safe-singleton-factory": "^1.0.31",
+    "@safe-global/safe-singleton-factory": "1.0.36",
     "@typescript-eslint/eslint-plugin": "^7.12.0",
     "@typescript-eslint/parser": "^7.12.0",
     "eslint": "^8.57.0",
@@ -48,5 +48,10 @@
     "prettier-plugin-solidity": "^1.3.1",
     "rimraf": "^5.0.7",
     "sherif": "^0.10.0"
+  },
+  "pnpm": {
+    "patchedDependencies": {
+      "@safe-global/safe-singleton-factory@1.0.36": "patches/@safe-global__safe-singleton-factory@1.0.36.patch"
+    }
   }
 }

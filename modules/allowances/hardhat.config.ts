@@ -8,14 +8,10 @@ import { getSingletonFactoryInfo } from '@safe-global/safe-singleton-factory'
 
 dotenv.config()
 
-const { INFURA_KEY, MNEMONIC, ETHERSCAN_API_KEY } = process.env
+const { INFURA_KEY, ETHERSCAN_API_KEY, PK } = process.env
 
 const sharedNetworkConfig: HttpNetworkUserConfig = {
-  accounts: {
-    mnemonic:
-      MNEMONIC ||
-      'candy maple cake sugar pudding cream honey rich smooth crumble sweet treat',
-  },
+  accounts: [PK as string],
 }
 
 const config: HardhatUserConfig = {
@@ -93,6 +89,22 @@ const config: HardhatUserConfig = {
       ...sharedNetworkConfig,
       url: `https://api.avax.network/ext/bc/C/rpc`,
     },
+    autonomys: {
+      ...sharedNetworkConfig,
+      url: `https://auto-evm.mainnet.autonomys.xyz/ws`,
+    },
+    autonomysChronos: {
+      ...sharedNetworkConfig,
+      url: `https://auto-evm.chronos.autonomys.xyz/ws`,
+    },
+    mantra: {
+      ...sharedNetworkConfig,
+      url: `https://evm.mantrachain.io`,
+    },
+    mantraTestnet: {
+      ...sharedNetworkConfig,
+      url: `https://evm.dukong.mantrachain.io`,
+    }
   },
   deterministicDeployment,
   namedAccounts: {

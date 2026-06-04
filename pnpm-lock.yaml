@@ -4,13 +4,18 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+patchedDependencies:
+  '@safe-global/safe-singleton-factory@1.0.36':
+    hash: frfg2afbum73ikxqapacnu6usq
+    path: patches/@safe-global__safe-singleton-factory@1.0.36.patch
+
 importers:
 
   .:
     devDependencies:
       '@safe-global/safe-singleton-factory':
-        specifier: ^1.0.31
-        version: 1.0.31
+        specifier: 1.0.36
+        version: 1.0.36(patch_hash=frfg2afbum73ikxqapacnu6usq)
       '@typescript-eslint/eslint-plugin':
         specifier: ^7.12.0
         version: 7.13.1(@typescript-eslint/parser@7.13.1(eslint@8.57.0)(typescript@5.5.2))(eslint@8.57.0)(typescript@5.5.2)
@@ -169,7 +174,7 @@ importers:
         version: 1.0.11(hardhat@2.22.5(bufferutil@4.0.8)(ts-node@10.9.2(@swc/core@1.6.5)(@types/node@20.14.10)(typescript@5.5.2))(typescript@5.5.2)(utf-8-validate@5.0.10))
       '@nomicfoundation/hardhat-toolbox':
         specifier: ^5.0.0
-        version: 5.0.0(ebhziiwx5ncphp522anrfafmii)
+        version: 5.0.0(juc3n2vyedonomtvpmsrizjpvm)
       '@openzeppelin/contracts':
         specifier: ^5.0.2
         version: 5.0.2
@@ -232,7 +237,7 @@ importers:
     devDependencies:
       '@nomicfoundation/hardhat-toolbox':
         specifier: ^5.0.0
-        version: 5.0.0(ebhziiwx5ncphp522anrfafmii)
+        version: 5.0.0(juc3n2vyedonomtvpmsrizjpvm)
       '@openzeppelin/contracts':
         specifier: ^5.0.2
         version: 5.0.2
@@ -311,7 +316,7 @@ importers:
         version: 1.0.11(hardhat@2.22.5(bufferutil@4.0.8)(ts-node@10.9.2(@swc/core@1.6.5)(@types/node@20.14.10)(typescript@5.5.2))(typescript@5.5.2)(utf-8-validate@5.0.10))
       '@nomicfoundation/hardhat-toolbox':
         specifier: ^5.0.0
-        version: 5.0.0(ebhziiwx5ncphp522anrfafmii)
+        version: 5.0.0(juc3n2vyedonomtvpmsrizjpvm)
       '@safe-global/mock-contract':
         specifier: ^4.1.0
         version: 4.1.0
@@ -372,7 +377,7 @@ importers:
         version: 3.0.6(ethers@6.13.1(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.5(bufferutil@4.0.8)(ts-node@10.9.2(@swc/core@1.6.5)(@types/node@20.14.10)(typescript@5.5.2))(typescript@5.5.2)(utf-8-validate@5.0.10))
       '@nomicfoundation/hardhat-toolbox':
         specifier: ^5.0.0
-        version: 5.0.0(ebhziiwx5ncphp522anrfafmii)
+        version: 5.0.0(juc3n2vyedonomtvpmsrizjpvm)
       '@types/node':
         specifier: ^20.14.10
         version: 20.14.10
@@ -408,7 +413,7 @@ importers:
         version: 0.7.0
       '@nomicfoundation/hardhat-toolbox':
         specifier: ^5.0.0
-        version: 5.0.0(ebhziiwx5ncphp522anrfafmii)
+        version: 5.0.0(juc3n2vyedonomtvpmsrizjpvm)
       '@safe-global/safe-4337-provider':
         specifier: workspace:^0.0.0
         version: link:../4337-provider
@@ -2429,8 +2434,8 @@ packages:
   '@safe-global/safe-modules-deployments@2.2.0':
     resolution: {integrity: sha512-ZzNhMf8Xxods3TrY7kSrescnicHQRFH7eYx7TMKqVhxFScEiuYmivQMdV94ziF+Hot0xCcrrFeed657U/oXrJw==}
 
-  '@safe-global/safe-singleton-factory@1.0.31':
-    resolution: {integrity: sha512-7B8XkpP7Q2ukPXbQumdgAat1fJt2voVpMaiQLgP5nyOxo7uYzf0n8kPiwMjdpLsLMDicKKfsBuHrhhCY9vfAJA==}
+  '@safe-global/safe-singleton-factory@1.0.36':
+    resolution: {integrity: sha512-IlX7t6XkpbauDVJcMBtm0tuB3YT8g7rhqo4H8IMsvgla5d3hRRYQgh2QK/PaaJ9sQ4CrSmQ6dgFi0CngSVScOA==}
 
   '@scure/base@1.1.7':
     resolution: {integrity: sha512-PPNYBslrLNNUQ/Yad37MHYsNQtK67EhWb6WtSvNLLPo7SdVZgkUjD6Dg+5On7zNwmskf8OX7I7Nx5oN+MIWE0g==}
@@ -9526,7 +9531,7 @@ snapshots:
       ethereumjs-util: 7.1.5
       hardhat: 2.22.5(bufferutil@4.0.8)(ts-node@10.9.2(@swc/core@1.6.5)(@types/node@20.14.10)(typescript@5.5.2))(typescript@5.5.2)(utf-8-validate@5.0.10)
 
-  '@nomicfoundation/hardhat-toolbox@5.0.0(ebhziiwx5ncphp522anrfafmii)':
+  '@nomicfoundation/hardhat-toolbox@5.0.0(juc3n2vyedonomtvpmsrizjpvm)':
     dependencies:
       '@nomicfoundation/hardhat-chai-matchers': 2.0.7(@nomicfoundation/hardhat-ethers@3.0.6(ethers@6.13.1(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.5(bufferutil@4.0.8)(ts-node@10.9.2(@swc/core@1.6.5)(@types/node@20.14.10)(typescript@5.5.2))(typescript@5.5.2)(utf-8-validate@5.0.10)))(chai@4.4.1)(ethers@6.13.1(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.5(bufferutil@4.0.8)(ts-node@10.9.2(@swc/core@1.6.5)(@types/node@20.14.10)(typescript@5.5.2))(typescript@5.5.2)(utf-8-validate@5.0.10))
       '@nomicfoundation/hardhat-ethers': 3.0.6(ethers@6.13.1(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.5(bufferutil@4.0.8)(ts-node@10.9.2(@swc/core@1.6.5)(@types/node@20.14.10)(typescript@5.5.2))(typescript@5.5.2)(utf-8-validate@5.0.10))
@@ -10120,7 +10125,7 @@ snapshots:
 
   '@safe-global/safe-modules-deployments@2.2.0': {}
 
-  '@safe-global/safe-singleton-factory@1.0.31': {}
+  '@safe-global/safe-singleton-factory@1.0.36(patch_hash=frfg2afbum73ikxqapacnu6usq)': {}
 
   '@scure/base@1.1.7': {}
 
