@@ -104,7 +104,31 @@ const config: HardhatUserConfig = {
     mantraTestnet: {
       ...sharedNetworkConfig,
       url: `https://evm.dukong.mantrachain.io`,
-    }
+    },
+    tempo: {
+      ...sharedNetworkConfig,
+      url: `https://rpc.tempo.xyz`,
+    },
+    tempoTestnet: {
+      ...sharedNetworkConfig,
+      url: `https://rpc.moderato.tempo.xyz`,
+    },
+    ault: {
+      ...sharedNetworkConfig,
+      url: `https://main-json-rpc.cloud.aultblockchain.xyz`,
+    },
+    aultTestnet: {
+      ...sharedNetworkConfig,
+      url: `https://test-json-rpc.cloud.aultblockchain.xyz`,
+    },
+    sei: {
+      ...sharedNetworkConfig,
+      url: `https://sei.api.pocket.network`,
+    },
+    seiTestnet: {
+      ...sharedNetworkConfig,
+      url: `https://evm-rpc-testnet.sei-apis.com`,
+    },
   },
   deterministicDeployment,
   namedAccounts: {
