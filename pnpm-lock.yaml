@@ -6,7 +6,7 @@ settings:
 
 patchedDependencies:
   '@safe-global/safe-singleton-factory@1.0.36':
-    hash: ot2qjrux7vpqyulogufjx7p2ai
+    hash: uc666xyodb5fmfgwfwsyitl5qi
     path: patches/@safe-global__safe-singleton-factory@1.0.36.patch
 
 importers:
@@ -15,7 +15,7 @@ importers:
     devDependencies:
       '@safe-global/safe-singleton-factory':
         specifier: 1.0.36
-        version: 1.0.36(patch_hash=ot2qjrux7vpqyulogufjx7p2ai)
+        version: 1.0.36(patch_hash=uc666xyodb5fmfgwfwsyitl5qi)
       '@typescript-eslint/eslint-plugin':
         specifier: ^7.12.0
         version: 7.13.1(@typescript-eslint/parser@7.13.1(eslint@8.57.0)(typescript@5.5.2))(eslint@8.57.0)(typescript@5.5.2)
@@ -10125,7 +10125,7 @@ snapshots:
 
   '@safe-global/safe-modules-deployments@2.2.0': {}
 
-  '@safe-global/safe-singleton-factory@1.0.36(patch_hash=ot2qjrux7vpqyulogufjx7p2ai)': {}
+  '@safe-global/safe-singleton-factory@1.0.36(patch_hash=uc666xyodb5fmfgwfwsyitl5qi)': {}
 
   '@scure/base@1.1.7': {}
 

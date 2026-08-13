@@ -129,6 +129,14 @@ const config: HardhatUserConfig = {
       ...sharedNetworkConfig,
       url: `https://evm-rpc-testnet.sei-apis.com`,
     },
+    adi: {
+      ...sharedNetworkConfig,
+      url: `https://rpc.adifoundation.ai`,
+    },
+    adiTestnet: {
+      ...sharedNetworkConfig,
+      url: `https://rpc.ab.testnet.adifoundation.ai`,
+    },
   },
   deterministicDeployment,
   namedAccounts: {
